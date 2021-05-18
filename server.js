@@ -24,14 +24,7 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(flash());
-// app.use((req,res,next)=> {
-//   console.log(res.locals);
-//   res.locals.alerts = req.flash();
-//   res.locals.currentUser = req.user;
-//   next();
-// })
 
-//--->>>> 8
 app.use(passport.initialize());  
 app.use(passport.session());  
 
@@ -45,12 +38,6 @@ app.use((req,res,next)=> {
 app.get('/', (req, res) => {
   res.render('index');
 });
-
-// app.get('/profile', (req, res) => {
-//   res.render('profile');
-// });
-
-
 
 app.use('/auth', require('./controllers/auth'));
 

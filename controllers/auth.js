@@ -49,6 +49,7 @@ router.post('/signup', async(req, res) => {
     }
     } catch (error){
       console.log('----- error -----')
+      // console.log(error)
 
       //handle the user in case something goes wrong
       req.flash('error', 'either email or password is incorrect. Please Try again.');
