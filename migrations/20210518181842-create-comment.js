@@ -11,10 +11,10 @@ module.exports = {
       body: {
         type: Sequelize.TEXT
       },
-      user_id: {
+      userId: {
         type: Sequelize.INTEGER
       },
-      movie_id: {
+      movieId: {
         type: Sequelize.INTEGER
       },
       createdAt: {

@@ -11,6 +11,10 @@ const SECRET_SESSION = process.env.SECRET_SESSION;
 console.log(SECRET_SESSION);
 
 
+// const axios = require("axios");
+
+// const APIKey = process.env.API_KEY;
+
 app.set('view engine', 'ejs');
 
 app.use(require('morgan')('dev'));
@@ -40,6 +44,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/auth', require('./controllers/auth'));
+
+app.use('/movies', require('./controllers/movies'));
 
 app.get('/profile', isLoggedIn, (req, res) => {
   const { id, name, email } = req.user.get(); 

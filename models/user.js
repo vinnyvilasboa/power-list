@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       models.user.hasMany(models.movie);
+      models.user.hasMany(models.comment);
     }
   };
 
