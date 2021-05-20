@@ -1,32 +1,34 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../models');
 const axios = require("axios");
+const db = require('../models');
 
 const APIKey = process.env.API_KEY;
 
-//route to search EJS layout
-router.get('/search', (req,res) => {
+router.get('/search', (req, res) => {
     res.render('movies/search')
 })
-//route to results file in movies folder 
-router.get('/results', async (req,res) => {
+router.get('/results', async (req, res) => {
     console.log(req.query.search);
+    const results = await axios.get(`http://www.omdbapi.com/?apikey=${APIKey}&s=${req.query.search}`)
 
-
-const results = await axios.get(`http://www.omdbapi.com/?apikey=${APIKey}&s=${req.query.search}`)
-// res.send(results.data.Search)
-console.log(results.data.Search)
-res.render('movies/results', {movieResults:results.data.Search?results.data.Search:[]});
+    console.log(results.data.Search)
+    res.render('movies/results', { movieResults: results.data.Search ? results.data.Search : [] });
 
 })
 
-// .then(response =>{
-    //     let movieData = response.data
-    //     let movieTitle = movieData.title
-    //     let movieYear = movieData.year
-    //     let moviePoster = movieData.poster
-    //     res.render('movies/search', {poke: pokeData, moves: pokeMoves, types: pokeTypes, image: pokeImg})
-    //   })
+router.post('/new', async (req, res) => {
+    const createMovie = await db.movie.create(req.body)
+    res.redirect('/movies')
+    console.log(createMovie)
+})
 
 module.exports = router;
+
+
+// router.post('/', function(req, res) {
+//     // TODO: Get form data and add a new record to DB
+//     const createMovie = db.movie.create(req.body)
+//       res.redirect('/movies')
+//     })
+//   });

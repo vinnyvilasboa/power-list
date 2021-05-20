@@ -1,11 +1,25 @@
+<form action="/movies/results" method="GET">
+    <label for="search">Search</label>
+    <input id="search" type="text" name="search">
+    <input type="submit" value="search">
+
+</form>
+
+
 <ul>
-    <% movieResults.forEach((movie) => { %> 
-    <div>
-    <li> <%= movie.Title  %> </li>
-    <li> <%= movie.Year  %> </li>
-    <li> <%= movie.Type  %> </li>
-    <li> <img src="<%= movie.Poster %>">
-    </li>
-</div>
-<% }) %> 
+    <% movieResults.forEach((movie)=> { %>
+        <div class "movieSelection">
+            <h1>
+                <%= movie.Title %>
+            </h1>
+            <li> <img src="<%= movie.Poster %>"></li>
+            <form method="POST" action="/movies/new">
+                <input hidden type="text" name="title" value="<%= movie.Title %>">
+                <input hidden type="text" name="year" value="<%= movie.Year %>">
+                <input hidden type="text" name="type" value="<%= movie.Type %>">
+                <button class="btn btn-primary" type="submit">Add To Power-List</button>
+            </form>
+        </div>
+        <% }) %>
 </ul>
+
