@@ -13,6 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       models.movie.belongsTo(models.user);
       models.movie.hasMany(models.comment);
+      //movie db belongs to many users
+      //movie db can have many comments
     }
   };
   movie.init({

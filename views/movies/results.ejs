@@ -1,0 +1,11 @@
+<ul>
+    <% movieResults.forEach((movie) => { %> 
+    <div>
+    <li> <%= movie.Title  %> </li>
+    <li> <%= movie.Year  %> </li>
+    <li> <%= movie.Type  %> </li>
+    <li> <img src="<%= movie.Poster %>">
+    </li>
+</div>
+<% }) %> 
+</ul>

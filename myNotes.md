@@ -1,4 +1,4 @@
-once a user is logged in i want to hit a get route that renders ejs page with a search form and once that user hit submit button
+once a user is logged in i want to hit a get route that renders h a search form aejs page witnd once that user hit submit button
 i should have a get route that queries the OMDB API and res.redirect to the same page.
 
 
@@ -10,13 +10,13 @@ ejs page handle search form from API
 power list
 
 1. search movie 
+***drop down menu
 movie result 
     title
-movie info 
     description
     imdb review
 comment
-    comment model
+    comment section
 
 2. search movie 
 movie result 
