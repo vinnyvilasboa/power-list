@@ -16,6 +16,15 @@ router.get('/results', async (req,res) => {
 const results = await axios.get(`http://www.omdbapi.com/?apikey=${APIKey}&s=${req.query.search}`)
 res.send(results.data)
 
+.then(response =>{
+    let movieData = response.data
+    let movieTitle = movieData.title
+    let movieYear = movieData.year
+    let moviePoster = movieData.poster
+    res.render('movies/search', {poke: pokeData, moves: pokeMoves, types: pokeTypes, image: pokeImg})
+  })
+
+
 })
 
 module.exports = router;
