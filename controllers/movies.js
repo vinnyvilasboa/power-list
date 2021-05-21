@@ -22,10 +22,9 @@ router.get('/new', (req, res) => {
 router.post('/new', async (req, res) => {
     const createMovie = await db.movie.findOrCreate({
         where: {title: req.body.title},
-        default: {title: req.body}
-
+        defaults: {review: req.body.review, description: req.body.description, userId: req.user?req.user.id:1}
     })
-    res.redirect('new')
+    res.redirect('/movies/new')
     console.log(req.body)
 })
 

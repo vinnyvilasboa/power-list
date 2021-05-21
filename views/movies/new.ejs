@@ -1,20 +1,10 @@
 <h1> Render ALL TOP 5 MOVIES HERE </h1>
 
-//pull up title (whatever details i want to display from the movie) 'squids'
-
-//research: nested function JS
-
-<!-- //Const movies = <%= movies.title %>  -->
-//UL and then IL
-
-//make a function and declare the title to display 
-
-
-<form action="/movies" method="POST">
-<div class="newMovie">
-    <label for="Fav1">Number 1</label>
-    //.....
-</div>
+<form method="POST" action="/movies/new">
+    <input type="text" name="title"/>
+    <input type="number" name="review" />
+    <input type="text" name="description" />
+    <button class="btn btn-primary" type="submit">Add To Power-List</button>
 </form>
 
 
