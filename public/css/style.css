@@ -2,8 +2,12 @@ nav ul li {
   text-decoration: none;
   display: inline-block;
   margin-right: .3em;
+  text-align: center;
 }
 
 h1 {
-  color: chartreuse;
+  color: red;
+  text-align:center;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 100px;
 }
