@@ -5,7 +5,7 @@ const app = express();
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('./config/ppConfig');
-const isLoggedIn = require('./middleware/isLoggedIn');
+const authorizedRoute = require('./middleware/auth-route');
 const methodOverride = require('method-override');
 
 const SECRET_SESSION = process.env.SECRET_SESSION;
@@ -50,7 +50,7 @@ app.use('/auth', require('./controllers/auth'));
 
 app.use('/movies', require('./controllers/movies'));
 
-app.get('/profile', isLoggedIn, (req, res) => {
+app.get('/profile', authorizedRoute, (req, res) => {
   const { id, name, email } = req.user.get(); 
   console.log("-----inside PROFILE----");
   res.render('profile', { id, name, email });
