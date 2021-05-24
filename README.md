@@ -31,9 +31,9 @@
 ---
 
 ## Future Considerations / Stretch Goals
-- adding decimals option to personal review
-- add search bar to the favorites list
-- make the app look presentable
+### - adding decimals option to personal review
+### - add search bar to the favorites list
+### - make the app look presentable
 
 ---
 
