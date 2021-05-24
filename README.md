@@ -4,7 +4,9 @@
 ---
 
 ## How to use it 
-- add link here (Heroku)
+[CLICK HERE TO TAKE YOU TO PAGE](https://powerlist.herokuapp.com/)
+
+
 --- 
 
 ## How it works: 
@@ -14,24 +16,24 @@
 ---
 
 ## Home Page 
-image here
+![HOME PAGE HEROKU](./images/home-page-heroku.PNG)
 
 ---
 
 ## Search Page 
-image here
+![Search](./images/search.PNG)
 
 ---
 
 ## Favorite Movies List
-image here
+![Favorite Movies](./images/movie-list.PNG)
 
 ---
 
 ## Future Considerations / Stretch Goals
 - adding decimals option to personal review
-- 
-- number 3
+- add search bar to the favorites list
+- make the app look presentable
 
 ---
 
