@@ -16,17 +16,17 @@
 ---
 
 ## Home Page 
-![HOME PAGE HEROKU](./images/home-page-heroku.PNG)
+![HOME PAGE HEROKU](./images/home-page-heroku.png)
 
 ---
 
 ## Search Page 
-![Search](./images/search.PNG)
+![Search](./images/search.png)
 
 ---
 
 ## Favorite Movies List
-![Favorite Movies](./images/movie-list.PNG)
+![Favorite Movies](./images/movie-list.png)
 
 ---
 
@@ -40,7 +40,7 @@
 ## WireFrame
 
 ### Original Home Page Plan
-![HOME PAGE](./images/front-page.PNG)
+![HOME PAGE](./images/front-page.png)
 
 ---
 
