@@ -1,22 +1,17 @@
 # Proposal
 Requirements for the weekend
-`1` An application name / concept 
+## `1` An application name / concept 
 
-POWER LIST 
-A list where people can add their top 5 favorite movies for other people to get inspired when they don't know what to watch!
-
-- [x]
-
-`2` A repo for your project 2 (built from express_auth template)
-
-- [x]
-
-`3` Wireframe for your app - (Lucidchart)
-
-![HOME PAGE](INDEX.PNG)
+## APP NAME: POWER-LIST 
+### A list where people can add their top 5 favorite movies for other people to get inspired when they don't know what to watch!
 
 
-CLICK [HERE](https://lucid.app/lucidchart/invitations/accept/inv_dadd07cb-661c-486b-b8c4-e272bc0d5908?viewport_loc=-525%2C-8%2C2798%2C1300%2C0_0) TO COMMENT ON THE WIREFRAME FOR INDEX
+## `2` A repo for your project 2 (built from express_auth template)
+
+
+## `3` Wireframe for your app - (Lucidchart)
+
+![HOME PAGE](./images/front-page.PNG)
 
 
 - [X]
@@ -32,7 +27,7 @@ GENRE
 IMDB RATING? 
 
 
-![ERD](project2ERD.png)
+![ERD](./images/project2ERD.png)
 
 Not sure if i did these right. 
 
