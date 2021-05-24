@@ -1,13 +1,18 @@
-nav ul li {
+/* nav ul li {
   text-decoration: none;
   display: inline-block;
   margin-right: .3em;
   text-align: center;
+} */
+
+body {
+  background: lightcyan;
 }
 
 h1 {
-  color: red;
+  color: rgb(86, 165, 230);
   text-align:center;
   font-family: 'Montserrat Subrayada', sans-serif;
   
 }
+

@@ -44,5 +44,10 @@ image here
 
 ## Code Snippet
 ```
-code snippet here
+    const results = await axios.get(`http://www.omdbapi.com/?apikey=${APIKey}&s=${req.query.search}`)
+
+    console.log(results.data.Search)
+    res.render('movies/results', { movieResults: results.data.Search ? results.data.Search : [] });
+
+})
 ```
